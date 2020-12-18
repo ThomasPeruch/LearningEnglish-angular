@@ -1,21 +1,11 @@
-.container{
-    background-color: #EDEDF1;
-}
-.mb-3{
-    padding-left: 35px;
-    padding-right: 35px;   
-}
-
-.text-in-page{
-    margin-left: 35px;
-}
-
 .jumbotron{
     margin-top: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.col-bt{
-   margin-right: 35px;
+.container{
+    background: #EEEDF1;
+    padding-left: 25px;
+    padding-right: 25px;
 }
