@@ -15,7 +15,10 @@
                 <h6 class="text-in-page">{{ instruction}} </h6>
                 <p class="text-in-page">{{ phrases[2].phraseEng }}</p>
                 <div class="mb-3">
-                    <textarea class="form-control" rows="3"></textarea>
+                    <textarea 
+                        class="form-control" rows="3" (input)="refreshAnswer($event)">
+
+                    </textarea>
                 </div>
             </div>
         </div>  
