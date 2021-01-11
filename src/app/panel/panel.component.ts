@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Phrase } from "../shared/phrase.model";
+import { phrases } from "./phrases-mock";
 
 @Component({
   selector: 'app-panel',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PanelComponent implements OnInit {
 
-  constructor() { }
+  public phrases: Phrase[] = phrases
+
+  constructor() { console.log(this.phrases)}
 
   ngOnInit(): void {
   }
