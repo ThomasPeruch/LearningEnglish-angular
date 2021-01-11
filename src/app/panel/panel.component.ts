@@ -11,6 +11,8 @@ export class PanelComponent implements OnInit {
 
   public phrases: Phrase[] = phrases
 
+  public instruction: string = 'Traduza a frase'
+
   constructor() { console.log(this.phrases)}
 
   ngOnInit(): void {
