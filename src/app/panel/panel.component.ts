@@ -13,14 +13,29 @@ export class PanelComponent implements OnInit {
   public answer: string =''
   public instruction: string = 'Traduza a frase'
 
-  constructor() { console.log(this.phrases)}
+  public round: number = 0
+  public phraseRound: Phrase
+
+  constructor() { 
+    this.phraseRound = this.phrases[this.round]
+  }
 
   ngOnInit(): void {
   }
 
   refreshAnswer(answer: Event): void{
     this.answer=((<HTMLInputElement>answer.target).value)
-    console.log(this.answer)
+  }
+
+  verifyAnswer(){
+    if(this.phraseRound.phrasePtBr == this.answer){
+      alert('Tradução correta')
+      this.round++
+      this.phraseRound = this.phrases[this.round]
+    }else{
+      alert('Tradução errada')
+    }
+
   }
 
 }
